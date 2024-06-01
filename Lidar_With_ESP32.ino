@@ -52,7 +52,7 @@ void loop() {
         if (uart[8] == (check & 0xff)) {
           dist = uart[2] + uart[3] * 256;
           strength = uart[4] + uart[5] * 256;
-          Serial.print("Jarak = ");
+          Serial.print("Distance = ");
           Serial.print(dist);
           Serial.print("cm");
           Serial.print("\t");
